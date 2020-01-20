@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Messenger</title>
+</head>
+<body>
+
+    <div id="dock-container">
+        <div id="dock">
+          <ul>
+            <li id="open">
+                <span>Messenger</span>
+                <a href="#"><img src="img/icon/logo.png"/></a>
+             </li>
+            <li>
+                <span>Sketch</span>
+                <a href="#"><img src="img/icon/sketch.png"/></a>
+             </li>
+            <li>
+                <span>Finder</span>
+                <a href="#"><img src="img/icon/finder.png"/></a>
+             </li>
+            <li>
+                <span>XCode</span>
+                <a href="#"><img src="img/icon/Xcode-icon.png"/></a>
+             </li>
+             <li>
+                <span>Chrome</span>
+                <a href="#"><img src="img/icon/chrome_ico.png"/></a>
+             </li>
+             <li>
+                <span>Firefox</span>
+                <a href="#"><img src="img/icon/firefox.png"/></a>
+             </li>
+             
+             <li>
+               <span>App Store</span>
+               <a href="#"><img src="img/icon/Mac-App-Store-icon.png"/></a>
+             </li>
+             <li>
+                <span>iTunes</span>
+                <a href="#"><img src="img/icon/iphone.png"/></a>
+             </li>
+             <li>
+                <span>Settings</span>
+                <a href="#"><img src="img/icon/Apple_Settings.png"/></a>
+             </li>
+            
+          </ul>
+        </div>
+       </div>
+
+       
+    <div class="main">
+     <div class="container-fluid con">
+        <div class="row no-gutters">
+            <div class="col-3 left-wrap">
+                <div class="controll pl-3 py-3 ">
+                    <span class="cls cls-window"></span>
+                    <span class="max"></span>
+                    <span class="min cls-window"></span>
+                </div>
+
+                <!-- tabs==================== -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link first active  ml-3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span>W</span></a>
+                      <a class="nav-item nav-link second" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span>H</span></a>
+                      <a class="nav-item nav-link third" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><span>G</span></a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="header first">
+                            <h6 class="slide-left">Work Space</h6>
+                        </div>
+                    </div>
+                    <div class="tab-pane " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="header second">
+                            <h6 class="slide-left">Home Space</h6>
+                        </div>
+                    </div>
+                    <div class="tab-pane " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="header third">
+                            <h6 class="slide-left">Game Space</h6>
+                        </div>
+                    </div>
+                  </div>
+                <!-- tabs End================= -->
+
+                <!-- chat List==================== -->
+                <div class="chat-list mt-4">
+                    <ul>
+                        <li>
+                            <img src="img/ava.png" alt="">
+                            <p>Serena Ribeiro<br><span>I'm going glam with sequins.</span></p>
+                        </li>
+                        <li class="active">
+                            <img src="img/ava7.png" alt="">
+                            <p>Marina<br><span>Cheers!</span></p>
+                        </li>
+                        <li>
+                            <img src="img/ava2.png" alt="">
+                            <p>MJ Price<br><span>Are You Sure?</span></p>
+                        </li>
+                        <li>
+                            <img src="img/ava3.png" alt="">
+                            <p>Ivan Biteikin<br><span>You are Most Welcome.</span></p>
+                        </li>
+                        <li>
+                            <img src="img/ava4.png" alt="">
+                            <p>Adam Jarman<br><span>Thanks</span></p>
+                        </li>
+                        <li>
+                            <img src="img/ava5.png" alt="">
+                            <p>Minnie Warner<br><span>We can do it right now?</span></p>
+                        </li>
+                       
+                    </ul>
+                </div>
+                 <!-- chat List End==================== -->
+            </div>
+            <div class="col-9 chat">
+                <div class="name-bar">
+                    <div class="bar-left">
+                        <img src="img/ava7.png" alt="">
+                        <p>Marina</p>
+                    </div>
+                    <div class="bar-right">
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <!-- Name bar end -->
+                <div class="chat-container">
+                   <div class="chat-row scrollbar scrollbar-pink bordered-pink">
+                        <div id="chat-pop"><p>Hi, how are you varman?</p></div>
+                        <div><p>Hi marina i am good tnx how about you?</p></div>
+                        <div id="chat-pop"><p>i am good too, thank you for your chat template</p></div>
+                        <div><p>You welcome marina</p></div>
+                        <div id="chat-pop"><p>i am looking for your next templates</p></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corrupti!</p></div>
+                        <div><p>Lorem ipsum dolor sit amet.</p></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.!</p></div>
+                        
+                   </div>
+                </div>
+                <!-- table-end -->
+                <div class="input-bar">
+                    <form autocomplete="off">
+                        <i class="fas fa-paperclip gray"></i>
+                        <input type="text" id="name" placeholder="Type someting">
+                        <a class="add-row" href="#bottom"><i class="fas fa-paper-plane"></i></a>
+                    </form>
+                </div>
+                <!-- input-bar-end -->
+            </div>
+
+        </div>   
+     </div>
+    </div>
+
+
+
+
+
+    
+    
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- <style type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css"></style> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        
+
+        $(document).ready(function(){
+            
+            $(".max").click(function(){
+                $(".main").toggleClass("maximum");
+                $(".controll span").toggleClass("controll-scale");
+            });
+                $('.max').click();
+
+                $(".cls-window").click(function(){
+                    $(".main").css("display", "none");
+                });
+
+                $("#open").click(function(){
+                    $(".main").css("display", "block");
+                });
+
+            $('ul li').click(function(){
+                $('li').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+        
+    </script>
+
+<script>
+    $(document).ready(function(){
+        $(".add-row").click(function(){
+           $.send();
+        });
+    });    
+
+    $(document).keypress(function(event){
+    if(event.keyCode == 13){
+     $('.add-row').click();
+      //  validate(); doesn't need to be called from here
+    }
+});
+    $(document).ready(function(){
+        $.send = function(){
+             var name = $("#name").val();
+            var markup = "<div><p>" + name + "</p></div>";
+            $(".chat-row").append(markup);
+            $('.chat-row').scrollTop($('.chat-row')[0].scrollHeight);
+            $("input").val("");
+            }
+    });
+</script>
+
+</body>
+</html>
